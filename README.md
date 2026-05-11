@@ -1,10 +1,10 @@
 # ecoevo-jobfindR
 
-R fucntions for searching and and filtering job postings from the public [ecoevojobs.net](https://ecoevojobs.net/) Google SpreadSheet.
+R functions for searching and and filtering job postings from the public [ecoevojobs.net](https://ecoevojobs.net/) Google SpreadSheet.
 
 The script reads the public EcoEvoJobs spreadsheet and allows users to filter jobs by keyword, continent, country, subject area, deadline and last update date. 
 
-The fucntions presented here were developed to search in the "postdoc jobs" tab. For other jobs, column names are different and therefore the functions will require accounting for these column names.
+The functions presented here were developed to search in the "postdoc jobs" tab. For other jobs, column names are different and therefore the functions will require accounting for these column names.
 
 ## What it does
 
@@ -19,7 +19,6 @@ This script can:
   - continent
   - country
   - keyword
-  - subject keyword
   - application deadline
 
 ## Requirements
@@ -59,7 +58,7 @@ ex1
 # Example 2 - postdocs in Southern Europe in conservation
 ex2 <- filter_ecoevo_jobs(
   jobs,
-  country_filter = c("Spain", "France", "Italy", "Greece", "Portugal),
+  country_filter = c("Spain", "France", "Italy", "Greece", "Portugal"),
   keyword = "conservation"
   open_only = TRUE # Open
 )
